@@ -1,5 +1,7 @@
 # DevBlog Platform - Full Stack Blogging System
 
+**Live Demo**: [https://dev-blog-livid-three.vercel.app/](https://dev-blog-livid-three.vercel.app/)
+
 DevBlog is a modern, high-performance, full-stack blogging platform. It is engineered with a premium, responsive SaaS-style layout, utilizing React + TypeScript + Vite on the frontend and Node.js + Express on the backend, with PostgreSQL storage and user authentication handled via Supabase.
 
 ---
