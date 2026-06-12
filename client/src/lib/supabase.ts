@@ -1,0 +1,13 @@
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
+
+if (!supabaseUrl || !supabaseAnonKey || supabaseUrl.includes('your-supabase-project-id')) {
+  console.warn(
+    'Warning: Supabase environment variables are missing or set to default placeholders. ' +
+    'Please verify VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in client/.env.'
+  );
+}
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
